@@ -10,7 +10,10 @@ const students = [
 
 function goodMarks() {
     const result = students.filter(item => item.mark > 50)
-    console.log(result)
+    const resultToString = result.map( function (el){
+        return el.name
+    })
+    console.log(String(resultToString))
 }
 
 goodMarks()
